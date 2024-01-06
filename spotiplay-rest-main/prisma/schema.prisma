@@ -1,0 +1,57 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x", "linux-musl-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Podcast {
+  podcast_id      Int       @id @default(autoincrement())
+  podcast_title   String
+  podcast_desc    String
+  uploaded        DateTime
+  audio_file_path String
+  streams         Int
+  cover_art       String
+  podcaster       Podcaster @relation(fields: [author_id], references: [podcaster_id], onDelete: Cascade, onUpdate: Cascade)
+  author_id       Int
+  reviews         Review[]  @relation("PodcastToReviews")
+}
+
+model Reviewer {
+  reviewer_id     Int      @id @default(autoincrement())
+  username        String
+  email           String
+  password        String
+  profile_picture String
+  reviews         Review[] @relation("ReviewerToReviews")
+}
+
+model Review {
+  writer_id  Int
+  podcast_id Int
+  review     String
+  rating     Int
+  writer     Reviewer @relation("ReviewerToReviews", fields: [writer_id], references: [reviewer_id], onDelete: Cascade, onUpdate: Cascade)
+  podcast    Podcast  @relation("PodcastToReviews", fields: [podcast_id], references: [podcast_id], onDelete: Cascade, onUpdate: Cascade)
+
+  @@id([writer_id, podcast_id])
+}
+
+model Podcaster {
+  podcaster_id Int       @id @default(autoincrement())
+  name         String
+  cover_art    String
+  description  String
+  username     String
+  email        String
+  password     String
+  podcasts     Podcast[]
+
+  @@unique([username, email])
+}

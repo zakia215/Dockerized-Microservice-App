@@ -1,0 +1,21 @@
+version: '3'
+services:
+  spotiplay-soap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3001:3001"
+    volumes:
+      - ./target/spotiplay-soap-1.0-SNAPSHOT.jar:/app/target/spotiplay-soap-1.0-SNAPSHOT.jar
+      - ./target/spotiplay-soap-1.0-SNAPSHOT-jar-with-dependencies.jar:/app/target/spotiplay-soap-1.0-SNAPSHOT-jar-with-dependencies.jar
+    depends_on:
+       - soap-db
+  soap-db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    env_file:
+      - .env
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d

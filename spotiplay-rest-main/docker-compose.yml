@@ -1,0 +1,29 @@
+version: '3'
+services:
+  rest-service:
+    container_name: spotiplay-rest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    depends_on:
+      - rest-db
+  rest-db:
+    container_name: spotiplay-rest-db
+    image: postgres:latest
+    ports:
+      - "5433:5432"
+    env_file:
+      - .env
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      main:
+        aliases:
+          - rest-db
+
+networks:
+  main:
