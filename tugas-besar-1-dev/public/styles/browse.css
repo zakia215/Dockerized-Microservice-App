@@ -1,0 +1,382 @@
+body {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  font-family: "Averia Serif Libre";
+  box-sizing: border-box;
+}
+
+.all-contents {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-start;
+}
+
+.nav {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+.right-navbar {
+  width: 100%;
+}
+
+.right-navbar-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+.profile-navbar {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  margin-right: 60px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.logout-button {
+  font-family: "Averia Serif Libre";
+  font-size: 16px;
+  line-height: normal;
+  width: auto;
+  height: auto;
+  background-color: #ffdc34;
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  padding: 8px 19px 8px;
+}
+
+.logout-button p {
+  transform: translate(0, -50%);
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.search-sort {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-box {
+  height: 100%;
+  width: 334px;
+  border-radius: 15px;
+  background-color: #110113;
+  border: 2px solid #00918e;
+  padding: 0;
+  display: flex;
+}
+
+.search-box button {
+  padding-left: 8px;
+}
+
+.search-box input {
+  box-sizing: border-box;
+  width: 100%;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #ffffff;
+  font-family: "Averia Serif Libre";
+  font-size: 16px;
+  margin-left: 0px;
+}
+
+.search-by, .sort, .filter {
+    height: 100%;
+    display: flex;
+    margin: 0 10px 0 20px;
+    position: relative;
+}
+
+.search-by {
+    margin-right: 2px;
+}
+
+.dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  border: none;
+  padding-left: 10px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Averia Serif Libre";
+  background-color: #110113;
+  color: #ffffff;
+  border: 2px solid #00918e;
+  border-radius: 15px;
+  width: 92px;
+}
+
+.search-by select {
+    width: 110px;
+}
+
+.search-by #custom-dropdown {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 20px;
+    height: 100%;
+    border-radius: 15px;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-by image {
+    height: 20px;
+}
+
+.sort #custom-dropdown {
+  position: absolute;
+  top: 0;
+  left: 52%;
+  width: 20px;
+  height: 100%;
+  border-radius: 15px;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort image {
+  height: 20px;
+}
+
+.filter {
+  margin-left: 0;
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+#filter-release-date-container {
+  width: 125px;
+}
+
+#filter-release-date {
+  width: 100%;
+}
+
+.filter button {
+  position: absolute;
+  top: 23%;
+  left: 68%;
+}
+
+#filter-release-date-container button {
+  position: absolute;
+  top: 23%;
+  left: 75%;
+}
+
+/* .search-sort{100%
+    display: flex;
+    margin-bottom: 10px;
+    height: 30px;
+    align-items: center;
+}
+
+.search-box {
+    height: 100%;
+    width: 334px;
+    border-radius: 60px;
+    background-color: #110113;
+    border: 2px solid #00918e;
+    padding: 0;
+    display: flex;
+}
+
+
+button{
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.search-box img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-color: #110113;
+    border-radius: 50%;
+    margin-left: 8px;
+    margin-top: 4px;
+}
+
+.sort {
+    height: 100%;
+}
+
+.dropdown{
+    background-color: #110113;
+    color : #ffffff;
+    border: 2px solid #00918e;
+    font-family: 'Averia Serif Libre';
+    font-size: 16;
+    width: 100%;
+    height: 34px;
+    margin-left : 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+.filter{
+    height: 100%;
+    margin-left: 20px;
+} */
+
+.card-container {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profile {
+  width: 106px;
+  height: 106px;
+  border-radius: 50%;
+}
+
+h1,
+h2 {
+  font-family: "Averia Serif Libre";
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+.container {
+  margin-left: 75px;
+  flex-grow: 1;
+  padding-left: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 120px;
+  height: 200px;
+  border-radius: 10%;
+  position: relative;
+  margin-right: 15px;
+  position: relative;
+}
+.edit-button {
+  background-color: #00918e;
+  padding: 2px;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  display: none;
+  color: white;
+  font-size: 10px;
+}
+.delete-button {
+  position: absolute;
+  background-color: #00918e;
+  padding: 2px;
+  width: 50px;
+  border-radius: 10px;
+  bottom: 5%;
+  left: 5%;
+  display: none;
+  color: white;
+  font-size: 10px;
+}
+
+.img-container:hover {
+  background-color: #d9d9d9;
+  opacity: 0.3;
+}
+.img-container:hover .edit-button {
+  display: block;
+}
+.img-container:hover .delete-button {
+  display: block;
+}
+
+.judulLagu {
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 0px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a .artistName {
+  font-size: 8px;
+  margin-top: 0px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.songs-summary,
+.albums-summary,
+.artists-summary {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.add-entity-button {
+  font-family: "Averia Serif Libre";
+  font-size: 16px;
+  line-height: normal;
+  background-color: #ffdc34;
+  color: black;
+  padding: 8px 19px 8px;
+  border-radius: 30px;
+}
+
+.page-number {
+  background-color: #ffdc34;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.pagination {
+  margin-top: 20px;
+}

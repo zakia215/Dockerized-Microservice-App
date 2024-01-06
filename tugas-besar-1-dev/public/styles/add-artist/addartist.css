@@ -1,0 +1,231 @@
+html {
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.container {
+    margin-left: 15%;
+    font-family: 'Averia Serif Libre', cursive;
+    padding-left: 130px;
+}
+
+.logout-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-top: 36px;
+    margin-right: 82px;
+    align-items: center;
+}
+
+.logout-container img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.logout {
+    font-family: 'Averia Serif Libre', cursive;
+    width: 92px;
+    height: 37px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-right: 16px;
+}
+
+.artist-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+#add-artist-form {
+    margin-top: 10px;
+}
+
+#artistName {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 40px;
+    width: 320px;
+    background-color: black;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    cursor: pointer;
+}
+
+#edit-artist-name {
+    font-family: 'Averia Serif Libre', cursive;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    font-size: 8px;
+    padding: 1px 13px 2px;
+}
+
+.image-container {
+    position: relative;
+    height: 150px;
+    width: 120px;
+    margin: 12px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#profile-mask {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background: rgba(217, 217, 217, 0.70);
+}
+
+.image-container h2 {
+    display: none;
+    position: absolute;
+    font-size: 12px;
+    z-index: 1;
+    top: 42%;
+    left: 25%;
+}
+
+#submit-button {
+    font-family: 'Averia Serif Libre', cursive;
+    width: auto;
+    height: auto;
+    padding: 7px 13px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 
+h1 {
+    font-size: 40px;
+    width: 250px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-artist-name {
+    width: 39px;
+    height: 15px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 8px;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 100px;
+    height: 125px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    background-color: #d9d9d9;
+    border-radius: 10%;
+}
+
+h2 {
+    font-size: 12px;
+    width: 100px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.album-list {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 100px;
+    top: 10px;
+    background-color: rgba(217, 217, 217, 0.6);
+    border-radius: 10%;
+    margin-top: 25px;
+}
+
+h3 {
+    font-size: 12px;
+    width: 100px;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+} */
+
+.song-list {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 100px;
+    background-color: rgba(217, 217, 217, 0.6);
+    border-radius: 10%;
+    margin-top: 25px;
+}
+
+.save-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.save {
+    width: 92px;
+    height: 45px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    bottom: 30px;
+    right: 150px;
+    position: absolute;
+} 

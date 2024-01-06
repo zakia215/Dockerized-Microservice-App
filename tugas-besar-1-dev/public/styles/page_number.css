@@ -1,0 +1,48 @@
+.page-number-container {
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.page-number-container p {
+    font-family: 'Averia Serif Libre';
+    color: white;
+    margin: 0 4px;
+}
+
+.next-prev {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-num-nav {
+    min-width: 20px;
+    max-width: auto;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px;
+    cursor: pointer;
+}
+
+.next-prev-container {
+    background-color: #FFDC34;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.selected-page {
+    background-color: #FFDC34;
+    border-radius: 5px;
+}
+
+.selected-page p {
+    color: black;
+}

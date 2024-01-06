@@ -1,0 +1,9 @@
+@echo off
+echo Stopping and removing containers...
+docker-compose down
+
+echo Building Docker image...
+docker build -t tubes-1:latest .
+
+echo Starting containers...
+docker-compose up -d

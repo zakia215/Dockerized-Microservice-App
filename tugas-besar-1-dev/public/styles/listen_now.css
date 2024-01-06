@@ -1,0 +1,230 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+}
+
+.listen-now {
+    font-family: 'Averia Serif Libre', cursive;
+    padding-left: 15%;
+}
+
+.account {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-right: 82px;
+    margin-top: 36px;
+}
+
+.account img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 16px;
+}
+
+.logout {
+    width: 97px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Averia Serif Libre', cursive;
+    background: #FFDC34;
+    color: black;
+    font-size: 16px;
+    font-weight: 400px;
+    padding-top: 0;
+}
+
+.entity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 65px;
+}
+
+.cover-art {
+    width: 400px;
+    height: 400px;
+}
+
+.entity h2 {
+    margin-top: 8px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.entity h3 {
+    margin-top: 5px;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.controller button {
+    background: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+.controller img {
+    height: 30px;
+    width: 30px;
+}
+
+#playPause, #playPause img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#playPause {
+    margin-left: 20px;
+    margin-right: 18px;
+}
+
+.time-volume-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px; /* Set a height for the container */
+    margin-top: 8px;
+}
+
+.seek-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time span {
+    font-size: 10px;
+}
+
+.duration-slider {
+    position: relative;
+    margin: 0 20px;
+    width: 500px;
+    height: 3px;
+    background:#4c5262;
+}
+
+.duration-input {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 1;
+    height: 3px;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 0%;
+    background: #FFDC34;
+}
+
+.dot {
+    position: absolute;
+    top: -5px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #FFDC34;
+}
+
+.volume {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.volume img {
+    height: 17px;
+    width: 17px;
+    margin-right: 5px;
+}
+
+.volume-control-container {
+    height: 3px;
+    width: 150px;
+    position: relative;
+    background:#4c5262;
+    /* opacity: 0; */
+}
+
+#volumeSlider {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    top: -2px;
+}
+
+.volume-line {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #FFDC34;
+    top: 0px;
+}
+
+.volume-dot {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #FFDC34;
+    top: -5px;
+    left: 100%;
+    border-radius: 50%;
+}
+
+span {
+    padding-top: 3px;
+}
+
+/* .song-control {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+h2 {
+    display: inline;
+    width: auto;
+}
+
+.cover-art {
+    width: 450px;
+    height: 450px;
+} */

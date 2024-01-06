@@ -1,0 +1,233 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-family: 'Averia Serif Libre', cursive;
+    color: white;
+}
+
+.main-container {
+    font-family: 'Averia Serif Libre', cursive;
+    margin-left: 15%;
+}
+
+.account {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Averia Serif Libre', cursive;
+    margin-right: 82px;
+    margin-top: 36px;
+}
+
+.account img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-left: 16px;
+}
+
+.logout {
+    width: 97px;
+    height: 45px;
+    border-radius: 30px;
+    font-family: 'Averia Serif Libre', cursive;
+    background: #FFDC34;
+    color: black;
+    font-size: 16px;
+    font-weight: 400px;
+    padding-top: 0;
+}
+
+/* body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+.profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.profile img {
+    height: 50px;
+    width: 50px;
+    top: 36px;
+    right: 100px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.logout-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logout {
+    width: 100px;
+    height: 50px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    top: 36px;
+    right: 175px;
+    position: absolute;
+}
+
+h1 {
+    font-size: 40px;
+    width: 300px;
+    color: #ffffff;
+    margin-top: 81px;
+    margin-left: 418px;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+h2 {
+    font-size: 18px;
+    width: 200px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-left: 418px;
+    margin-bottom: 5px;
+    padding: 0;
+}
+
+.edit1 {
+    width: 39px;
+    height: 15px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 8px;
+    top: 100px;
+    left: 676px;
+    position: absolute;
+}
+
+.edit2 {
+    width: 39px;
+    height: 15px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    font-size: 8px;
+    top: 140px;
+    left: 528px;
+    position: absolute;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 120px;
+    height: 154px;
+    position: relative;
+    left: 418px;
+    top: 40px;
+    background-color: #d9d9d9;
+    border-radius: 10%;
+}
+
+.description-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 446px;
+    height: 154px;
+    border-radius: 10px;
+    position: relative;
+    left: 601px;
+    bottom: 115px;
+    background-color: #d9d9d9;
+}
+
+.description-container textarea {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    outline: none;
+    resize: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.save-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.save {
+    width: 92px;
+    height: 45px;
+    background-color: #ffdc34;
+    color: #000000;
+    border: none;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    font-size: 16px;
+    bottom: 30px;
+    right: 175px;
+    position: absolute;
+}
+
+.search-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+}
+
+.search-bar {
+    width: 334px;
+    height: 31px;
+    border-radius: 15px;
+    border: 1px solid #00918E;
+    background: #110133;
+    left: 418px;
+}
+
+.search-bar input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 0px 24px;
+    font-size: 20px;
+    color: #cac7ff;
+} */
+
+/* .search-bar button img {
+    width: 25px;
+    top: 100px
+}
+
+.search-bar button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60;
+    background: #58629b;
+} */
+
+/* h3 {
+    font-size: 20px;
+    width: 200px;
+    color: #ffffff;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 5px;
+    padding: 0; 
+} */
